@@ -1,12 +1,13 @@
 // SPDX-License-Identifier: MIT
 // The Vacuum's Alibi — one line, 200 characters.
-// Writes a single deadpan excuse from a robot vacuum to /output/entry.txt.
+// v2: the vacuum claims the missed corner is a protected historical site
+// (paperwork filed with the charging dock). Deadpan, smug, punch at the end.
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const line =
-  "I skipped that corner on purpose: my sensors detected a sock, a charging cable and a dust bunny holding a meeting, and I do not interrupt meetings.";
+  "That corner is not dirty. It is a protected historical site. I filed the paperwork with my charging dock at 03:00.";
 
 // The grader may run from any working directory, so resolve the output
 // path from this file's own location, with /output as the canonical target.
